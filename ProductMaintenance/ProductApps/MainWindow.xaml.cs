@@ -39,6 +39,8 @@ namespace ProductApps
                 totalChargeTextBox.Text = Convert.ToString(cProduct.TotalCharge);
                 cProduct.calTotalWrap();
                 totalWrapTextBox.Text = Convert.ToString(cProduct.TotalWrap);
+                cProduct.calTotalGST();
+                totalGSTTextBox.Text = Convert.ToString(cProduct.TotalGST);
             }
             catch (FormatException)
             {
